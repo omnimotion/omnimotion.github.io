@@ -1,16 +1,18 @@
-# 3D Moments from Near-Duplicate Photos
+# Tracking Everything Everywhere All At Once
 
-This repository contains source code for the [3D Moments website](https://3d-moments.github.io).
+This repository contains source code for the [OmniMotion website](https://omnimotion.github.io).
 
 If you find our work useful please cite:
-
-@inproceedings{wang2022_3dmoments,
-  author    = {Wang, Qianqian and Li, Zhengqi and  Salesin, David and Curless, Brian and Snavely, Noah and Kontkanen, Janne},
-  title     = {3D Moments from Near-Duplicate Photos},
-  booktitle = {CVPR},
-  year      = {2022}
+<pre>
+@inproceedings{wang2023omnimotion,
+  title     = {Tracking Everything Everywhere All at Once},
+  author    = {Wang, Qianqian and Chang, Yen-Yu and Cai, Ruojin and Li, Zhengqi, and Hariharan, Bharath, and Holynski, Aleksander and Snavely, Noah},
+  booktitle = {arXiv},
+  year      = {2023}
 }
+</pre>
 
+The website template is borrowed from [Nerfies](https://nerfies.github.io/).
 
 
 # Website License

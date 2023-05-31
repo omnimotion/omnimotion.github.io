@@ -5,10 +5,10 @@
   <meta name="description" content="Tracking Everything Everywhere All at Once">
   <meta property="og:title" content="Tracking Everything Everywhere All at Once">
   <meta property="og:description" content="Tracking Everything Everywhere All at Once">
-  <meta property="og:image" content="https://omnimotion.github.io/static/data/open_graph.png">
+  <meta property="og:image" content="https://omnimotion.github.io/static/images/open_graph.jpg">
   <meta property="twitter:title" content="Tracking Everything Everywhere All at Once">
   <meta property="twitter:description" content="Tracking Everything Everywhere All at Once">
-  <meta property="twitter:image" content="https://omnimotion.github.io/static/data/open_graph.png">
+  <meta property="twitter:image" content="https://omnimotion.github.io/static/images/open_graph.jpg">
   <meta property="og:type" content="website">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="keywords" content="motion, tracking">
@@ -192,7 +192,7 @@
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-          We present a new test-time optimization method for estimating dense and long-range motion from a video sequence. Prior optical flow or particle video tracking algorithms typically operate within limited temporal windows, struggling to track through occlusions and maintain global consistency of estimated motion trajectories. We propose a complete and globally consistent motion representation dubbed <span class="dnerf">OmniMotion</span> that allows for accurate, full-length motion estimation of every pixel in a video. OmniMotion represents a video using a quasi-3D canonical volume and performs pixel-wise tracking via bijections between local and canonical space. This representation allows us to ensure global consistency, track through occlusions, and model any combination of camera and object motion. Extensive evaluations on the TAP-Vid benchmark and real-world footage show that our approach outperforms prior state-of-the-art methods by a large margin both quantitatively and qualitatively.
+          We present a new test-time optimization method for estimating dense and long-range motion from a video sequence. Prior optical flow or particle video tracking algorithms typically operate within limited temporal windows, struggling to track through occlusions and maintain global consistency of estimated motion trajectories. We propose a complete and globally consistent motion representation dubbed <b>OmniMotion</b> that allows for accurate, full-length motion estimation of every pixel in a video. OmniMotion represents a video using a quasi-3D canonical volume and performs pixel-wise tracking via bijections between local and canonical space. This representation allows us to ensure global consistency, track through occlusions, and model any combination of camera and object motion. Extensive evaluations on the TAP-Vid benchmark and real-world footage show that our approach outperforms prior state-of-the-art methods by a large margin both quantitatively and qualitatively.
           </p>
         </div>
       </div>
@@ -241,36 +241,38 @@
 <section class="hero is-light is-small">
   <div class="hero-body">
     <div class="container">
-      <div id="results-carousel" class="carousel results-carousel">
-        <div class="item item-swing_tire">
-          <video class="lazy" poster="" id="swing_tire" autoplay controls muted loop playsinline height="100%">
-            <source data-src="./static/videos/swing_tire.mp4" type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-tennis">
-          <video class="lazy" poster="" id="tennis" autoplay controls muted loop playsinline height="100%">
-            <source data-src="./static/videos/tennis.mp4" type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-libby">
-          <video class="lazy" poster="" id="libby" autoplay controls muted loop playsinline height="100%">
-            <source data-src="./static/videos/libby.mp4" type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-soapbox">
-          <video class="lazy" poster="" id="soapbox" autoplay controls muted loop playsinline height="100%">
-            <source data-src="./static/videos/soapbox.mp4" type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-snowy-trees">
-          <video class="lazy" poster="" id="snowy-trees" autoplay controls muted loop playsinline height="100%">
-            <source data-src="./static/videos/snowy-trees.mp4" type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-birch">
-          <video class="lazy" poster="" id="birch" autoplay controls muted loop playsinline height="100%">
-            <source data-src="./static/videos/birch.mp4" type="video/mp4">
-          </video>
+      <div class="carousel-extra-padding">
+        <div id="results-carousel" class="carousel results-carousel">
+          <div class="item item-swing_tire">
+            <video id="swing_tire" autoplay controls muted loop playsinline height="100%" poster="static/images/swing_tire.jpg" >
+              <source src="./static/videos/swing_tire.mp4" type="video/mp4">
+            </video>
+          </div>
+          <div class="item item-tennis">
+            <video id="tennis" autoplay controls muted loop playsinline height="100%" poster="static/images/tennis.jpg">
+              <source src="./static/videos/tennis.mp4" type="video/mp4">
+            </video>
+          </div>
+          <div class="item item-libby">
+            <video class="lazy" id="libby" autoplay controls muted loop playsinline height="100%" poster="static/images/libby.jpg">
+              <source data-src="./static/videos/libby.mp4" type="video/mp4">
+            </video>
+          </div>
+          <div class="item item-soapbox">
+            <video class="lazy" id="soapbox" autoplay controls muted loop playsinline height="100%" poster="static/images/soapbox.jpg">
+              <source data-src="./static/videos/soapbox.mp4" type="video/mp4">
+            </video>
+          </div>
+          <div class="item item-snowy-trees">
+            <video class="lazy" id="snowy-trees" autoplay controls muted loop playsinline height="100%" poster="static/images/snowy-trees.jpg">
+              <source data-src="./static/videos/snowy-trees.mp4" type="video/mp4">
+            </video>
+          </div>
+          <div class="item item-birch">
+            <video class="lazy" id="birch" autoplay controls muted loop playsinline height="100%" poster="static/images/birch.jpg">
+              <source data-src="./static/videos/birch.mp4" type="video/mp4">
+            </video>
+          </div>
         </div>
       </div>
     </div>
@@ -282,42 +284,44 @@
 <section class="hero is-light is-small">
   <div class="hero-body">
     <div class="container">
-      <div id="results-carousel" class="carousel results-carousel">
-        <div class="item item-giraffe">
-          <video class="lazy" poster="" id="giraffe" autoplay controls muted loop playsinline height="100%">
-            <source data-src="./static/videos/giraffe.mp4" type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-india">
-          <video class="lazy" poster="" id="india" autoplay controls muted loop playsinline height="100%">
-            <source data-src="./static/videos/india.mp4" type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-longboard">
-          <video class="lazy" poster="" id="longboard" autoplay controls muted loop playsinline height="100%">
-            <source data-src="./static/videos/longboard.mp4" type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-squirrel">
-          <video class="lazy" poster="" id="squirrel" autoplay controls muted loop playsinline height="100%">
-            <source data-src="./static/videos/squirrel.mp4" type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-hike">
-          <video class="lazy" poster="" id="hike" autoplay controls muted loop playsinline height="100%">
-            <source data-src="./static/videos/hike.mp4" type="video/mp4">
-          </video>
-        </div>   
-        <div class="item item-flamingo">
-          <video class="lazy" poster="" id="flamingo" autoplay controls muted loop playsinline height="100%">
-            <source data-src="./static/videos/flamingo.mp4" type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-walking">
-          <video class="lazy" poster="" id="walking" autoplay controls muted loop playsinline height="100%">
-            <source data-src="./static/videos/walking.mp4"
-                    type="video/mp4">
-          </video>
+      <div class="carousel-extra-padding">
+        <div id="results-carousel" class="carousel results-carousel">
+          <div class="item item-giraffe">
+            <video id="giraffe" autoplay controls muted loop playsinline height="100%" poster="static/images/giraffe.jpg">
+              <source src="./static/videos/giraffe.mp4" type="video/mp4">
+            </video>
+          </div>
+          <div class="item item-india">
+            <video id="india" autoplay controls muted loop playsinline height="100%" poster="static/images/india.jpg">
+              <source src="./static/videos/india.mp4" type="video/mp4">
+            </video>
+          </div>
+          <div class="item item-longboard">
+            <video class="lazy" id="longboard" autoplay controls muted loop playsinline height="100%" poster="static/images/longboard.jpg">
+              <source data-src="./static/videos/longboard.mp4" type="video/mp4">
+            </video>
+          </div>
+          <div class="item item-squirrel">
+            <video class="lazy" id="squirrel" autoplay controls muted loop playsinline height="100%" poster="static/images/squirrel.jpg">
+              <source data-src="./static/videos/squirrel.mp4" type="video/mp4">
+            </video>
+          </div>
+          <div class="item item-hike">
+            <video class="lazy" id="hike" autoplay controls muted loop playsinline height="100%" poster="static/images/hike.jpg">
+              <source data-src="./static/videos/hike.mp4" type="video/mp4">
+            </video>
+          </div>   
+          <div class="item item-flamingo">
+            <video class="lazy" id="flamingo" autoplay controls muted loop playsinline height="100%" poster="static/images/flamingo.jpg">
+              <source data-src="./static/videos/flamingo.mp4" type="video/mp4">
+            </video>
+          </div>
+          <div class="item item-walking">
+            <video class="lazy" id="walking" autoplay controls muted loop playsinline height="100%" poster="static/images/walking.jpg">
+              <source data-src="./static/videos/walking.mp4"
+                      type="video/mp4">
+            </video>
+          </div>
         </div>
       </div>
     </div>
@@ -333,37 +337,49 @@
 <section>
     <div class="columns is-centered has-text-centered">
       <h2 class="title is-3"> Pseudo-Depth Visualization</h2>
-    </div>  
+    </div>
+    <div class="container is-max-desktop">
+      <div class="columns is-centered has-text-centered">
+      <div class="column is-9">
+        <div class="content has-text-justified">
+              <p>Since our method optimizes an underlying quasi-3D representation, we can extract a pseudo-depth visualization showing the relative ordering of different parts of the scene. </p>
+        </div>
+      </div>
+  </div>
+</div>
+
 </section>
 
 <br>
-<br>
+<!-- <br> -->
 
 
 
 <section class="hero is-light is-small">
   <div class="hero-body">
     <div class="container">
-      <div id="results-carousel" class="carousel results-carousel">
-        <div class="item item-lab-coat_pseudo_depth">
-          <video class="lazy" poster="" id="lab-coat_pseudo_depth" autoplay controls muted loop playsinline height="100%">
-            <source data-src="./static/videos/lab-coat_pseudo_depth.mp4" type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-swing_pseudo_depth">
-          <video class="lazy" poster="" id="swing_pseudo_depth" autoplay controls muted loop playsinline height="100%">
-            <source data-src="./static/videos/swing_pseudo_depth.mp4" type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-car-roundabout_pseudo_depth">
-          <video class="lazy" poster="" id="car-roundabout_pseudo_depth" autoplay controls muted loop playsinline height="100%">
-            <source data-src="./static/videos/car-roundabout_pseudo_depth.mp4" type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-butterfly_pseudo_depth">
-          <video class="lazy" poster="" id="butterfly_pseudo_depth" autoplay controls muted loop playsinline height="100%">
-            <source data-src="./static/videos/butterfly_pseudo_depth.mp4" type="video/mp4">
-          </video>
+      <div class="carousel-extra-padding">
+        <div id="results-carousel" class="carousel results-carousel">
+          <div class="item item-lab-coat_pseudo_depth">
+            <video id="lab-coat_pseudo_depth" autoplay controls muted loop playsinline height="100%" poster="static/images/lab-coat_pseudo_depth.jpg">
+              <source src="./static/videos/lab-coat_pseudo_depth.mp4" type="video/mp4">
+            </video>
+          </div>
+          <div class="item item-swing_pseudo_depth">
+            <video  id="swing_pseudo_depth" autoplay controls muted loop playsinline height="100%" poster="static/images/swing_pseudo_depth.jpg">
+              <source src="./static/videos/swing_pseudo_depth.mp4" type="video/mp4">
+            </video>
+          </div>
+          <div class="item item-car-roundabout_pseudo_depth">
+            <video class="lazy" id="car-roundabout_pseudo_depth" autoplay controls muted loop playsinline height="100%" poster="static/images/car-roundabout_pseudo_depth.jpg">
+              <source data-src="./static/videos/car-roundabout_pseudo_depth.mp4" type="video/mp4">
+            </video>
+          </div>
+          <div class="item item-butterfly_pseudo_depth">
+            <video class="lazy" id="butterfly_pseudo_depth" autoplay controls muted loop playsinline height="100%" poster="static/images/butterfly_pseudo_depth.jpg">
+              <source data-src="./static/videos/butterfly_pseudo_depth.mp4" type="video/mp4">
+            </video>
+          </div>
         </div>
       </div>
     </div>
@@ -383,12 +399,12 @@
   <br>
   <div class="video-grid-two-cols">
       <div>
-          <video class="lazy" muted="" playsinline="" autoplay="" loop="">
+          <video class="lazy" autoplay controls muted loop playsinline poster="static/images/bike-packing.jpg">
               <source data-src="static/videos/bike-packing.mp4" type="video/mp4">
           </video>
       </div>
       <div>
-          <video class="lazy" muted="" playsinline="" autoplay="" loop="">
+          <video class="lazy" autoplay controls muted loop playsinline poster="static/images/dog-agility.jpg">
               <source data-src="static/videos/dog-agility.mp4" type="video/mp4">
           </video>
       </div>

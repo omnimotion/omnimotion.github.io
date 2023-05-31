@@ -18,7 +18,6 @@ document.addEventListener("DOMContentLoaded", function() {
         }
       });
     });
-
     lazyVideos.forEach(function(lazyVideo) {
       lazyVideoObserver.observe(lazyVideo);
     });

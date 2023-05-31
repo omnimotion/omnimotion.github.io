@@ -115,6 +115,12 @@ body {
   margin: auto;
 }
 
+.carousel-extra-padding{
+  padding: 0 4%;
+  /* distance from button to webpage edge */
+}
+
+
 .results-carousel .item {
   margin: 5px;
   overflow: hidden;
@@ -161,31 +167,6 @@ body {
   border-radius: 5px;
 }
 
-#result_video_side {
-    width: auto;
-    height: 500px;
-    object-fit: cover;
-}
-
-
-#result_video_updown {
-    width: auto;
-    height: 400px;
-    object-fit: cover;
-}
-
-#result_video_spiral {
-    width: auto;
-    height: 390px;
-    object-fit: cover;
-}
-
-
-#result_video_zooming {
-    width: auto;
-    height: 398px;
-    object-fit: cover;
-}
 
 #failure_video {
     width: auto;

@@ -125,7 +125,7 @@
         display: grid;
         grid-template-columns: repeat(3, 1fr); /* Three columns */
         grid-template-rows: repeat(2, 1fr); /* Two rows */
-        gap: 5px; /* Gap between videos */
+        gap: 0px 5px; /* Gap between videos */
         width: 80%; /* Set the container width to 80% */
         margin: 0 auto; /* Center the container horizontally */
     }
@@ -135,19 +135,6 @@
         height: auto;
     }
 </style>
-
-<script>
-  window.addEventListener('load', function() {
-    var lazyVideos = document.querySelectorAll('video[preload="none"]');
-    
-    lazyVideos.forEach(function(video) {
-      video.preload = "auto";
-      video.load();
-    });
-  });
-</script>
-
-
 
 <section>
   <div class="video-grid">
@@ -244,33 +231,27 @@
       <div class="carousel-extra-padding">
         <div id="results-carousel" class="carousel results-carousel">
           <div class="item item-swing_tire">
-            <video id="swing_tire" autoplay controls muted loop playsinline height="100%" poster="static/images/swing_tire.jpg" >
-              <source src="./static/videos/swing_tire.mp4" type="video/mp4">
+            <video class="carousel-video" id="swing_tire" controls muted loop playsinline height="100%" poster="static/images/swing_tire.jpg" data-src="./static/videos/swing_tire.mp4" type="video/mp4">
             </video>
           </div>
           <div class="item item-tennis">
-            <video id="tennis" autoplay controls muted loop playsinline height="100%" poster="static/images/tennis.jpg">
-              <source src="./static/videos/tennis.mp4" type="video/mp4">
+            <video class="carousel-video" id="tennis" controls muted loop playsinline height="100%" poster="static/images/tennis.jpg" data-src="./static/videos/tennis.mp4" type="video/mp4">
             </video>
           </div>
           <div class="item item-libby">
-            <video class="lazy" id="libby" autoplay controls muted loop playsinline height="100%" poster="static/images/libby.jpg">
-              <source data-src="./static/videos/libby.mp4" type="video/mp4">
+            <video class="carousel-video" id="libby" controls muted loop playsinline height="100%" poster="static/images/libby.jpg" data-src="./static/videos/libby.mp4" type="video/mp4">
             </video>
           </div>
           <div class="item item-soapbox">
-            <video class="lazy" id="soapbox" autoplay controls muted loop playsinline height="100%" poster="static/images/soapbox.jpg">
-              <source data-src="./static/videos/soapbox.mp4" type="video/mp4">
+            <video class="carousel-video" id="soapbox" controls muted loop playsinline height="100%" poster="static/images/soapbox.jpg" data-src="./static/videos/soapbox.mp4" type="video/mp4">
             </video>
           </div>
           <div class="item item-snowy-trees">
-            <video class="lazy" id="snowy-trees" autoplay controls muted loop playsinline height="100%" poster="static/images/snowy-trees.jpg">
-              <source data-src="./static/videos/snowy-trees.mp4" type="video/mp4">
+            <video class="carousel-video" id="snowy-trees" controls muted loop playsinline height="100%" poster="static/images/snowy-trees.jpg" data-src="./static/videos/snowy-trees.mp4" type="video/mp4">
             </video>
           </div>
           <div class="item item-birch">
-            <video class="lazy" id="birch" autoplay controls muted loop playsinline height="100%" poster="static/images/birch.jpg">
-              <source data-src="./static/videos/birch.mp4" type="video/mp4">
+            <video class="carousel-video" id="birch" controls muted loop playsinline height="100%" poster="static/images/birch.jpg" data-src="./static/videos/birch.mp4" type="video/mp4">
             </video>
           </div>
         </div>
@@ -287,38 +268,31 @@
       <div class="carousel-extra-padding">
         <div id="results-carousel" class="carousel results-carousel">
           <div class="item item-giraffe">
-            <video id="giraffe" autoplay controls muted loop playsinline height="100%" poster="static/images/giraffe.jpg">
-              <source src="./static/videos/giraffe.mp4" type="video/mp4">
+            <video class="carousel-video" id="giraffe" controls muted loop playsinline height="100%" poster="static/images/giraffe.jpg" data-src="./static/videos/giraffe.mp4" type="video/mp4">
             </video>
           </div>
           <div class="item item-india">
-            <video id="india" autoplay controls muted loop playsinline height="100%" poster="static/images/india.jpg">
-              <source src="./static/videos/india.mp4" type="video/mp4">
+            <video class="carousel-video" id="india" controls muted loop playsinline height="100%" poster="static/images/india.jpg" data-src="./static/videos/india.mp4">
             </video>
           </div>
           <div class="item item-longboard">
-            <video class="lazy" id="longboard" autoplay controls muted loop playsinline height="100%" poster="static/images/longboard.jpg">
-              <source data-src="./static/videos/longboard.mp4" type="video/mp4">
+            <video class="carousel-video" id="longboard" controls muted loop playsinline height="100%" poster="static/images/longboard.jpg" data-src="./static/videos/longboard.mp4">
             </video>
           </div>
           <div class="item item-squirrel">
-            <video class="lazy" id="squirrel" autoplay controls muted loop playsinline height="100%" poster="static/images/squirrel.jpg">
-              <source data-src="./static/videos/squirrel.mp4" type="video/mp4">
+            <video class="carousel-video" id="squirrel" controls muted loop playsinline height="100%" poster="static/images/squirrel.jpg" data-src="./static/videos/squirrel.mp4">
             </video>
           </div>
           <div class="item item-hike">
-            <video class="lazy" id="hike" autoplay controls muted loop playsinline height="100%" poster="static/images/hike.jpg">
-              <source data-src="./static/videos/hike.mp4" type="video/mp4">
+            <video class="carousel-video" id="hike" controls muted loop playsinline height="100%" poster="static/images/hike.jpg" data-src="./static/videos/hike.mp4" type="video/mp4">
             </video>
           </div>   
           <div class="item item-flamingo">
-            <video class="lazy" id="flamingo" autoplay controls muted loop playsinline height="100%" poster="static/images/flamingo.jpg">
-              <source data-src="./static/videos/flamingo.mp4" type="video/mp4">
+            <video class="carousel-video" id="flamingo" controls muted loop playsinline height="100%" poster="static/images/flamingo.jpg" data-src="./static/videos/flamingo.mp4" type="video/mp4">
             </video>
           </div>
           <div class="item item-walking">
-            <video class="lazy" id="walking" autoplay controls muted loop playsinline height="100%" poster="static/images/walking.jpg">
-              <source data-src="./static/videos/walking.mp4"
+            <video class="carousel-video" id="walking" controls muted loop playsinline height="100%" poster="static/images/walking.jpg" data-src="./static/videos/walking.mp4"
                       type="video/mp4">
             </video>
           </div>
@@ -361,23 +335,19 @@
       <div class="carousel-extra-padding">
         <div id="results-carousel" class="carousel results-carousel">
           <div class="item item-lab-coat_pseudo_depth">
-            <video id="lab-coat_pseudo_depth" autoplay controls muted loop playsinline height="100%" poster="static/images/lab-coat_pseudo_depth.jpg">
-              <source src="./static/videos/lab-coat_pseudo_depth.mp4" type="video/mp4">
+            <video class="carousel-video" id="lab-coat_pseudo_depth" controls muted loop playsinline height="100%" poster="static/images/lab-coat_pseudo_depth.jpg" data-src="./static/videos/lab-coat_pseudo_depth.mp4" type="video/mp4">
             </video>
           </div>
           <div class="item item-swing_pseudo_depth">
-            <video  id="swing_pseudo_depth" autoplay controls muted loop playsinline height="100%" poster="static/images/swing_pseudo_depth.jpg">
-              <source src="./static/videos/swing_pseudo_depth.mp4" type="video/mp4">
+            <video class="carousel-video" id="swing_pseudo_depth" controls muted loop playsinline height="100%" poster="static/images/swing_pseudo_depth.jpg" data-src="./static/videos/swing_pseudo_depth.mp4" type="video/mp4">
             </video>
           </div>
           <div class="item item-car-roundabout_pseudo_depth">
-            <video class="lazy" id="car-roundabout_pseudo_depth" autoplay controls muted loop playsinline height="100%" poster="static/images/car-roundabout_pseudo_depth.jpg">
-              <source data-src="./static/videos/car-roundabout_pseudo_depth.mp4" type="video/mp4">
+            <video class="carousel-video" id="car-roundabout_pseudo_depth" controls muted loop playsinline height="100%" poster="static/images/car-roundabout_pseudo_depth.jpg" data-src="./static/videos/car-roundabout_pseudo_depth.mp4" type="video/mp4">
             </video>
           </div>
           <div class="item item-butterfly_pseudo_depth">
-            <video class="lazy" id="butterfly_pseudo_depth" autoplay controls muted loop playsinline height="100%" poster="static/images/butterfly_pseudo_depth.jpg">
-              <source data-src="./static/videos/butterfly_pseudo_depth.mp4" type="video/mp4">
+            <video class="carousel-video" id="butterfly_pseudo_depth" controls muted loop playsinline height="100%" poster="static/images/butterfly_pseudo_depth.jpg" data-src="./static/videos/butterfly_pseudo_depth.mp4" type="video/mp4">
             </video>
           </div>
         </div>
@@ -399,13 +369,11 @@
   <br>
   <div class="video-grid-two-cols">
       <div>
-          <video class="lazy" autoplay controls muted loop playsinline poster="static/images/bike-packing.jpg">
-              <source data-src="static/videos/bike-packing.mp4" type="video/mp4">
+          <video class="carousel-video" controls muted loop playsinline poster="static/images/bike-packing.jpg" data-src="static/videos/bike-packing.mp4" type="video/mp4">
           </video>
       </div>
       <div>
-          <video class="lazy" autoplay controls muted loop playsinline poster="static/images/dog-agility.jpg">
-              <source data-src="static/videos/dog-agility.mp4" type="video/mp4">
+          <video class="carousel-video" controls muted loop playsinline poster="static/images/dog-agility.jpg" data-src="static/videos/dog-agility.mp4" type="video/mp4">
           </video>
       </div>
   </div>

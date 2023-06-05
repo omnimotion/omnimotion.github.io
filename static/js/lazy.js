@@ -10,7 +10,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
   // Create a new Intersection Observer
   var observer = new IntersectionObserver(function (entries, observer) {
-    console.log(observer)
     entries.forEach(function (entry) {
       if (entry.isIntersecting) {
         var carouselVideos = document.querySelectorAll(".carousel-video");
@@ -21,7 +20,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
         // Stop observing the video once it becomes visible
         observer.disconnect();
-        observer.unobserve(video);
       }
     });
   }, options);

@@ -13,13 +13,15 @@ document.addEventListener("DOMContentLoaded", function () {
     entries.forEach(function (entry) {
       if (entry.isIntersecting) {
         var carouselVideos = document.querySelectorAll(".carousel-video");
+        console.log(carouselVideos)
          carouselVideos.forEach(function (video) {
           video.setAttribute("src", video.getAttribute("data-src"));
+          video.setAttribute("class", "video");
           video.autoplay = true;
         });
 
         // Stop observing the video once it becomes visible
-        observer.disconnect();
+        observer.unobserve(entry.target);
       }
     });
   }, options);

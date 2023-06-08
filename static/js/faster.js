@@ -1,8 +1,8 @@
 window.addEventListener('load', () => {
   function preloadImages() {
-   const flows_imageSrc = (i) => `flows/${String(i).padStart(5, '0')}.png`;
-   const flows_maskSrc = (i) => `flows/${String(i).padStart(5, '0')}_occ.png`
-   const swing_imageSrc = (i) => `swing/${String(i).padStart(5, '0')}.jpg`
+   const flows_imageSrc = (i) => `static/demo/flows/${String(i).padStart(5, '0')}.png`;
+   const flows_maskSrc = (i) => `static/demo/flows/${String(i).padStart(5, '0')}_occ.png`
+   const swing_imageSrc = (i) => `static/demo/swing/${String(i).padStart(5, '0')}.jpg`
    
    function preload(srcGetter) {
      result = [];
@@ -41,7 +41,7 @@ window.addEventListener('load', () => {
   }
 
   // Usage
-  displayFramesWithSlider("swing/", 59); // Example with 100 frames
+  displayFramesWithSlider("static/demo/swing/", 59); // Example with 100 frames
 
   const imageBoard1 = document.querySelectorAll('.image-board')[0];
   const clickableImage1 = imageBoard1.querySelector('.clickable-image');
@@ -106,8 +106,8 @@ window.addEventListener('load', () => {
 
 
   function transferDots() {
-    var imageSrc = "flows/" + String(slider.value).padStart(5, '0') + ".png";
-    var maskSrc = "flows/" + String(slider.value).padStart(5, '0') + "_occ.png";
+    var imageSrc = "static/demo/flows/" + String(slider.value).padStart(5, '0') + ".png";
+    var maskSrc = "static/demo/flows/" + String(slider.value).padStart(5, '0') + "_occ.png";
 
     var image = images.flow[slider.value];
     var mask = images.mask[slider.value];

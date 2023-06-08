@@ -17,7 +17,64 @@ body {
   font-variant: small-caps;
 }
 
+/* inserted */
 
+.image-board {
+  position: relative;
+  /* display: inline-block; */
+}
+.image-board .clickable-image {
+  display: block;
+}
+#initial-dot,
+.image-board .dot {
+  box-sizing: border-box;
+  position: absolute;
+  /* dot radius: 5px */
+  width: 12px;
+  height: 12px;
+  border: 2px solid white;
+  border-radius: 50%;
+  pointer-events: none;
+  background-color: red;
+}
+.image-board.move .dot,
+.image-board.move .cross {
+  transition: all 0.15s ease;
+}
+.image-board .cross {
+  position: absolute;
+  /* bottom: -10px; */
+  width: 12px;
+  height: 12px;
+  /* border: 1px solid black; */
+}
+
+.image-board .cross::before,
+.image-board .cross::after {
+  content: '';
+  position: absolute;
+  background-color: white;
+}
+
+.image-board .cross::before {
+  top: 0;
+  left: 50%;
+  margin-left: -1px;
+  width: 2px;
+  height: 100%;
+}
+
+.image-board .cross::after {
+  top: 50%;
+  left: 0;
+  margin-top: -1px;
+  width: 100%;
+  height: 2px;
+  /* transform: rotate(90deg); */
+}
+
+/* inserted end */
 .teaser .hero-body {
   padding-top: 0;
   padding-bottom: 3rem;

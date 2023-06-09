@@ -4,11 +4,11 @@ This repository contains source code for the [OmniMotion website](https://omnimo
 
 If you find our work useful please cite:
 <pre>
-@inproceedings{wang2023omnimotion,
-  title     = {Tracking Everything Everywhere All at Once},
-  author    = {Wang, Qianqian and Chang, Yen-Yu and Cai, Ruojin and Li, Zhengqi, and Hariharan, Bharath, and Holynski, Aleksander and Snavely, Noah},
-  booktitle = {arXiv},
-  year      = {2023}
+@article{wang2023omnimotion,
+  title   = {Tracking Everything Everywhere All at Once},
+  author  = {Wang, Qianqian and Chang, Yen-Yu and Cai, Ruojin and Li, Zhengqi and Hariharan, Bharath and Holynski, Aleksander and Snavely, Noah},
+  journal = {arXiv:2306.05422},
+  year    = {2023}
 }
 </pre>
 
